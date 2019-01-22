@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
-import { AngularDraggableDirective, IPosition } from './directive/angular-draggable.directive';
+import { AngularDraggableDirective } from './directive/angular-draggable.directive';
+import { AngularResizableDirective } from './directive/angular-resizable.directive';
 
 @NgModule({
   declarations: [
-    AngularDraggableDirective
+    AngularDraggableDirective,
+    AngularResizableDirective
   ],
   exports: [
-    AngularDraggableDirective
+    AngularDraggableDirective,
+    AngularResizableDirective
   ]
 })
 export class AngularDraggableModule { }
 
-export { AngularDraggableDirective, IPosition };
+export { AngularDraggableDirective, AngularResizableDirective };
+

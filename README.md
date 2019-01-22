@@ -19,6 +19,12 @@ Angular directive (for version >= 4.x ) that makes the DOM element draggable.
 angular2-draggable is an angular (ver >= 4.x) directive that makes the DOM element draggable. (Note that: It's different from drag-and-drop)
 
 # Latest Update
++ 2019.01.17: 1.5.1
+  + Fix public api.
+
++ 2019.01.08: 1.5.0
+  + Backport resizable directive to 1.x line to enable it for Angular 4.
+
 + 2018.05.23: 1.4.2
   + Changes: expose boundsCheck() method.
 
@@ -103,7 +109,7 @@ Please refer to the [demo](https://xieziyu.github.io/angular2-draggable) page.
 
 1. Firstly, import `AngularDraggableModule` in your app module (or any other proper angular module):
     ```typescript
-    import { AngularDraggableModule } from 'angular2-draggable';
+    import { AngularDraggableModule } from '@wfm/angular2-draggable';
 
     @NgModule({
       imports: [

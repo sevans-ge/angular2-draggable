@@ -1,3 +1,15 @@
+## 1.5.1 (2019-01-17)
+
+#### Changes
++ Properly export public types
+
+---
+## 1.5.0 (2019-01-08)
+
+#### Changes
++ Backport resizable directive to 1.x line to enable it for Angular 4.
+
+---
 ## 1.4.2 (2018-05-23)
 
 #### Changes

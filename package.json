@@ -10,11 +10,12 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:lib": "ng-packagr",
-    "link:lib": "rimraf node_modules/angular2-draggable && cpr dist/lib node_modules/angular2-draggable",
+	"build:css": "node scripts/build-scss.js",
+    "link:lib": "rimraf node_modules/@wfm/angular2-draggable && cpr dist/lib node_modules/@wfm/angular2-draggable",
     "update:md": "cpr README.md dist/lib/README.md -o",
-    "dist": "run-s build:lib update:md",
-    "release": "run-s build:lib update:md link:lib build:doc",
-    "demo": "run-s build:lib link:lib start",
+    "dist": "run-s build:lib build:css update:md",
+    "release": "run-s build:lib build:css update:md link:lib build:doc",
+    "demo": "run-s build:lib link:lib build:css start",
     "build:doc": "run-s build compodoc",
     "compodoc": "compodoc -p lib/src/tsconfig.lib.json -d dist/docs/api-doc --theme stripe",
     "serve:doc": "compodoc -p lib/src/tsconfig.lib.json -s"
@@ -65,6 +66,6 @@
     "rimraf": "^2.6.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
-    "typescript": "~2.4.2"
+    "typescript": "~2.8.3"
   }
 }
